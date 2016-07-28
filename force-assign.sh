@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # SET THESE BEFORE RUNNING OR SET ENVVARS EXTERNALLY
-[[ -z $ES_MASTER]] && ES_MASTER="IP_OR_DNS_NAME"
-[[ -z $ES_PORT ]] && ES_PORT="9200" # Port that ES_MASTER is listening on
-[[ -z $AT_A_TIME ]] && AT_A_TIME=100 # The number of unassigned shards to allocate per run
+[ -z "$ES_MASTER" ] && ES_MASTER="IP_OR_DNS_NAME"
+[ -z "$ES_PORT" ] && ES_PORT="9200" # Port that ES_MASTER is listening on
+[ -z "$AT_A_TIME" ] && AT_A_TIME=100 # The number of unassigned shards to allocate per run
 
 set -e
 
